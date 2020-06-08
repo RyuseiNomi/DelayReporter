@@ -6,5 +6,7 @@
 
 <div class="main top-main">
   <h1>遅れている路線一覧</h1>
-  <h1>[TODO] 地域選択モーダルの作成</h1>
+  <% @delay_lists.each do |delay_list| %>
+    <li><%= delay_list %></li>
+  <% end %>
 </div>
