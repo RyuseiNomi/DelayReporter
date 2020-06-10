@@ -5,10 +5,21 @@
 </header>
 
 <div class="main top-main">
-  <h1>遅れている路線一覧</h1>
-  <% @delay_lists.each do |delay_list| %>
-    <li><%= delay_list.fetch("Company") %></li>
-    <li><%= delay_list.fetch("Name") %></li>
-    <li><%= delay_list.fetch("Status") %></li>
-  <% end %>
+  <div class="region-select-menu">
+    <ul>
+      <li>地域選択</a></li>
+      <li><a href="#">北海道</a></li>
+      <li><a href="#">東北</a></li>
+      <li><a href="#">関東</a></li>
+      <li><a href="#">中部</a></li>
+    </ul>
+  </div>
+  <div class="operation-information">
+    <h1>遅延情報</h1>
+    <% @delay_lists.each do |delay_list| %>
+      <li><%= delay_list.fetch("Company") %></li>
+      <li><%= delay_list.fetch("Name") %></li>
+      <li><%= delay_list.fetch("Status") %></li>
+    <% end %>
+  </div>
 </div>
