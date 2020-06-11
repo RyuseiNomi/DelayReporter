@@ -1,0 +1,26 @@
+<div class="main top-main">
+  <div class="region-select-menu">
+    <ul>
+      <li>地域選択</a></li>
+      <li><a href="/delay_lists/index?region=北海道">北海道</a></li>
+      <li><a href="/delay_lists/index?region=東北">東北</a></li>
+      <li><a href="/delay_lists/index?region=関東">関東</a></li>
+      <li><a href="/delay_lists/index?region=中部">中部</a></li>
+    </ul>
+  </div>
+  <div class="search-area">
+    <h1>駅名から検索</h1>
+    <form method="GET">
+      <input class="search-text-area" type="search" placeholder="駅名を入力">
+      <input type="submit" name="submit" value="検索">
+    </form>
+  </div>
+  <div class="operation-information">
+    <h1>遅延情報</h1>
+    <% @delay_lists.each do |delay_list| %>
+      <li><%= delay_list.fetch("Company") %></li>
+      <li><%= delay_list.fetch("Name") %></li>
+      <li><%= delay_list.fetch("Status") %></li>
+    <% end %>
+  </div>
+</div>
