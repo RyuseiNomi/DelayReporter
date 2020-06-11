@@ -14,6 +14,13 @@
       <li><a href="#">中部</a></li>
     </ul>
   </div>
+  <div class="search-area">
+    <h1>駅名から検索</h1>
+    <form method="GET">
+      <input class="search-text-area" type="search" placeholder="駅名を入力">
+      <input type="submit" name="submit" value="検索">
+    </form>
+  </div>
   <div class="operation-information">
     <h1>遅延情報</h1>
     <% @delay_lists.each do |delay_list| %>

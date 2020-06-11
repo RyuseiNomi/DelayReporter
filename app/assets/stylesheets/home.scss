@@ -133,9 +133,23 @@ header {
   background-color: #d7efd7;
 }
 
+/* 駅名検索エリア========================== */
+.search-area {
+  float: left;
+  width: 600px;
+  max-width: 100%;
+  padding-left: 50px;
+}
+
+.search-area h1{
+  text-align: left;
+
+}
+
 /* 遅延リスト========================== */
 .operation-information {
   margin: 0;
   padding: 0;
+  clear: both;
 }
 
