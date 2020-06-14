@@ -49,3 +49,37 @@ body {
   padding-right: 15px;
   clear: both;
 }
+
+/* 路線情報レイアウト ================================ */
+.operation-information {
+  padding-left: 100px;
+  padding-right: 100px;
+}
+
+.route-detail {
+  padding-left: 50px;
+  padding-right: 50px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.route-detail p {
+  display: inline-block;
+}
+
+.route span {
+  display: block;
+  text-align: left;
+}
+
+.route #company {
+  font-size: 24px;
+}
+
+.route #name {
+  font-size: 36px;
+}
+
+.status {
+  font-size: 68px;
+}

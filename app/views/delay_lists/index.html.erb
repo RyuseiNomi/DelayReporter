@@ -17,5 +17,16 @@
   </div>
   <div class="operation-information">
     <h1><%= @region %>地方</h1>
+    <% @filtered_routes.each do |routes| %>
+      <div class="route-detail">
+        <p class="route">
+          <span id="company"><%= routes.fetch("Company") %></span>
+          <span id="name"><%= routes.fetch("Name") %></span>
+        </p>
+        <p class="status">
+          <span><%= routes.fetch("Status") %></span>
+        </p>
+      </div>
+    <% end %>
   </div>
 </div>
