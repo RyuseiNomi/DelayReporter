@@ -6,6 +6,10 @@
       <li><a href="/delay_lists/index?region=東北">東北</a></li>
       <li><a href="/delay_lists/index?region=関東">関東</a></li>
       <li><a href="/delay_lists/index?region=中部">中部</a></li>
+      <li><a href="/delay_lists/index?region=近畿">近畿</a></li>
+      <li><a href="/delay_lists/index?region=中国地方">中国地方</a></li>
+      <li><a href="/delay_lists/index?region=四国">四国</a></li>
+      <li><a href="/delay_lists/index?region=九州">九州</a></li>
     </ul>
   </div>
   <div class="search-area">
@@ -16,7 +20,7 @@
     </form>
   </div>
   <div class="operation-information">
-    <h1><%= @region %>地方</h1>
+    <h1><%= @region %></h1>
     <% @filtered_routes.each do |routes| %>
       <div class="route-detail">
         <p class="route">
