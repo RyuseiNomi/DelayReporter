@@ -6,6 +6,10 @@
       <li><a href="/delay_lists/index?region=東北">東北</a></li>
       <li><a href="/delay_lists/index?region=関東">関東</a></li>
       <li><a href="/delay_lists/index?region=中部">中部</a></li>
+      <li><a href="/delay_lists/index?region=近畿">近畿</a></li>
+      <li><a href="/delay_lists/index?region=中国地方">中国地方</a></li>
+      <li><a href="/delay_lists/index?region=四国">四国</a></li>
+      <li><a href="/delay_lists/index?region=九州">九州</a></li>
     </ul>
   </div>
   <div class="search-area">
@@ -16,11 +20,6 @@
     </form>
   </div>
   <div class="operation-information">
-    <h1>遅延情報</h1>
-    <% @delay_lists.each do |delay_list| %>
-      <li><%= delay_list.fetch("Company") %></li>
-      <li><%= delay_list.fetch("Name") %></li>
-      <li><%= delay_list.fetch("Status") %></li>
-    <% end %>
+    <h1>運行情報</h1>
   </div>
 </div>
