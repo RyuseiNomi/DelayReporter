@@ -141,9 +141,37 @@ header {
   padding-left: 50px;
 }
 
-.search-area h1{
+.search-area h1 {
   text-align: left;
 
+}
+
+#station-search-form {
+  position: relative;
+  max-width: 600px;
+  margin: 10px 5px 10px 5px;
+}
+
+#search-box {
+  position: absolute;
+  left: 0;
+  top: 30px;
+  width: 400px;
+  height: 30px;
+  padding: 10px 10px;
+  border-radius: 5px;
+  color: #808080; //gray
+}
+
+#search-submit-button {
+  position: absolute;
+  top: 30px;
+  width: 80px;
+  left: 400px;
+  height: 30px;
+  background-color: #ff7f50; //coral
+  color: #ffffff; //white
+  font-weight: bold;
 }
 
 /* 遅延リスト========================== */
