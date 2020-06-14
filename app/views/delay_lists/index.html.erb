@@ -28,7 +28,12 @@
           <span id="name"><%= routes.fetch("Name") %></span>
         </p>
         <p class="status">
-          <span><%= routes.fetch("Status") %></span>
+          <% status = routes.fetch("Status") %>
+          <% if status == "○" %>
+            <span id="status_normal"><%= status %></span>
+          <% else %>
+            <span id="status_delay"><%= status %></span>
+          <% end %>
         </p>
       </div>
     <% end %>

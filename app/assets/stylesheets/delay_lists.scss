@@ -88,6 +88,14 @@ body {
 
 .status {
   font-size: 68px;
-  font-weight: bold;
   margin: 10px 40px 10px 0;
+  font-weight: bold;
+}
+
+#status_normal {
+  color: #3cb371; //mediumseagreen
+}
+
+#status_delay {
+  color: #ff4500; //orangered
 }
