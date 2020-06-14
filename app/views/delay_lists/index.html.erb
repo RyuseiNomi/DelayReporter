@@ -1,0 +1,23 @@
+<div class="main top-main">
+  <%= render 'shared/regionList' %>
+  <%= render 'shared/searchArea' %>
+  <div class="operation-information">
+    <h1><%= @region %></h1>
+    <% @filtered_routes.each do |routes| %>
+      <div class="route-detail">
+        <p class="route">
+          <span id="company"><%= routes.fetch("Company") %></span>
+          <span id="name"><%= routes.fetch("Name") %></span>
+        </p>
+        <p class="status">
+          <% status = routes.fetch("Status") %>
+          <% if status == "○" %>
+            <span id="status_normal"><%= status %></span>
+          <% else %>
+            <span id="status_delay"><%= status %></span>
+          <% end %>
+        </p>
+      </div>
+    <% end %>
+  </div>
+</div>
