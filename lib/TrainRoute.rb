@@ -52,4 +52,13 @@ class TrainRoute
 
     return filtered_routes
   end
+
+  # 駅の情報を駅名より取得する
+  # ==== Args
+  # name :: 目的の駅名
+  # ==== Return
+  # filtered_route :: 駅の情報
+  def findStationByName(name)
+    return @@routes_property.select { |key, value| key == name}
+  end
 end
