@@ -1,7 +1,7 @@
 <div class="search-area">
   <h1>駅名から検索</h1>
-  <form id="station-search-form" method="GET">
-    <input id="search-box" type="search" placeholder="駅名を入力">
-    <input id="search-submit-button" type="submit" value="検索">
-  </form>
+  <%= form_tag("/search/index", :method => 'get', :id => "station-search-form") do %>
+    <input id="search-box" type="search" name="station_name" placeholder="駅名を入力" />
+    <input id="search-submit-button" type="submit" value="検索" />
+  <% end %>
 </div>

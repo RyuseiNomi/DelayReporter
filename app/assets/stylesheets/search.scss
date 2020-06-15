@@ -1,0 +1,50 @@
+/* 路線情報レイアウト ================================ */
+.search-result {
+  padding-left: 100px;
+  padding-right: 100px;
+  clear: both;
+}
+
+.route-detail {
+  margin: 15px 80px 15px 80px;
+  display: flex;
+  justify-content: space-between;
+  background-color: #f5f5f5;
+  filter: drop-shadow(0px 3px 5px #d3d3d3);
+  border-radius: 30px;
+}
+
+.route-detail p {
+  display: inline-block;
+}
+
+.route {
+  margin: 10px 0 10px 40px;
+}
+
+.route span {
+  display: block;
+  text-align: left;
+}
+
+.route #company {
+  font-size: 24px;
+}
+
+.route #name {
+  font-size: 36px;
+}
+
+.status {
+  font-size: 68px;
+  margin: 10px 40px 10px 0;
+  font-weight: bold;
+}
+
+#status_normal {
+  color: #3cb371; //mediumseagreen
+}
+
+#status_delay {
+  color: #ff4500; //orangered
+}

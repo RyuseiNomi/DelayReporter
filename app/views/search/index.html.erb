@@ -1,0 +1,23 @@
+<div class="main top-main">
+  <%= render 'shared/regionList' %>
+  <%= render 'shared/searchArea' %>
+  <div class="search-result">
+    <h1>検索結果</h1>
+    <% @results.each do |route| %>
+      <div class="route-detail">
+        <p class="route">
+          <span id="company"><%= route.fetch("Company") %></span>
+          <span id="name"><%= route.fetch("Name") %></span>
+        </p>
+        <p class="status">
+          <% status = route.fetch("Status") %>
+          <% if status == "○" %>
+            <span id="status_normal"><%= status %></span>
+          <% else %>
+            <span id="status_delay"><%= status %></span>
+          <% end %>
+        </p>
+      </div>
+    <% end %>
+  </div>
+</div>
