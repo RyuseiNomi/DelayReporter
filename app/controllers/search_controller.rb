@@ -1,9 +1,8 @@
 class SearchController < ApplicationController
   def index
     station_name = self.extractStationNameFromQuery()
-
     routes = TrainRoute.new
-    @result = routes.findStationByName(station_name)
+    @results = routes.findStationByName(station_name)
   end
 
   # リクエストURLよりクエリパラメータを取得する

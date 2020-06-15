@@ -7,7 +7,7 @@ class TrainRoute
   # APIから遅延リストを取得する
   # ==== Return
   # delay_lists :: 遅延リスト
-  def fetchRoutes
+  def setRoutes
     delay_list_api_url = "https://8wbb81dkpd.execute-api.ap-northeast-1.amazonaws.com/beta/delayList?region=all"
     delay_lists = []
 
@@ -17,7 +17,7 @@ class TrainRoute
     train_routes = hashed_delay_lists.fetch("delay_list")
 
     train_routes.each do |train_route|
-        delay_lists.push train_route
+      @@routes_property.push train_route
     end
   end
 
@@ -25,16 +25,7 @@ class TrainRoute
   # ==== Return
   # routes :: 遅延リスト
   def getRoutes
-    return @routes_property
-  end
-
-  # APIから取得した列車運行情報をプロパティ変数に格納する
-  # ==== Args
-  # routes :: 遅延リスト
-  def setRoutes(routes)
-    routes.each do |route|
-      @@routes_property.push route
-    end
+    return @@routes_property
   end
 
   # APIから取得した列車運行情報をプロパティ変数に格納する
@@ -55,10 +46,17 @@ class TrainRoute
 
   # 駅の情報を駅名より取得する
   # ==== Args
-  # name :: 目的の駅名
+  # station_name :: 目的の駅名
   # ==== Return
-  # filtered_route :: 駅の情報
-  def findStationByName(name)
-    return @@routes_property.select { |key, value| key == name}
+  # search_result :: 駅の情報
+  def findStationByName(station_name)
+    search_result = []
+    @@routes_property.each do |route|
+      #TODO 部分一致、前方一致でも結果を取得できるようにする
+      if route.fetch("Name") == station_name then
+          search_result.push route
+      end
+    end
+    return search_result
   end
 end
