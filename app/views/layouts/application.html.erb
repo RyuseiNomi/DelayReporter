@@ -16,5 +16,14 @@
       </div>
     </header>
     <%= yield %>
+
+    <footer>
+      <ul>
+        <li><a href="/about">このサイトについて</a></li>
+        <li><a>  |  </a></li>
+        <li><a>Copyright: 2020 Ryusei Nomi</a></li>
+      </ul>
+    </footer>
+    <%= yield :footer %>
   </body>
 </html>
