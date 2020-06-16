@@ -3,4 +3,7 @@ class HomeController < ApplicationController
     routes = TrainRoute.new
     routes.setRoutes()
   end
+
+  def about
+  end
 end
