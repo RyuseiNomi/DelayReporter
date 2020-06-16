@@ -19,7 +19,18 @@ footer {
   margin-bottom: 0;
   width: 100%;
 
-  height: 50px;
+  height: 30px;
   background-color: #3FCDC5;
-  color: #FFFFFF;
+}
+
+footer a {
+  color: white;
+}
+
+footer ul {
+  text-align: center;
+}
+
+footer li {
+  display: inline;
 }
