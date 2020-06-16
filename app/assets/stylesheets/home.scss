@@ -53,7 +53,9 @@ body {
 /* ヘッダー ================================ */
 header {
   height: 64px;
-  position: absolute;
+  position: fixed;
+  top: 0;
+  margin-bottom: 0;
   z-index: 1;
   width: 100%;
   background-color: #3ecdc6;
