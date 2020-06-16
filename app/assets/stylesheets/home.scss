@@ -50,31 +50,6 @@ body {
   clear: both;
 }
 
-/* ヘッダー ================================ */
-header {
-  height: 64px;
-  position: fixed;
-  top: 0;
-  margin-bottom: 0;
-  z-index: 1;
-  width: 100%;
-  background-color: #3ecdc6;
-}
-
-.header-logo {
-  float: left;
-  padding-left: 20px;
-  color: white;
-  font-size: 22px;
-  line-height: 64px;
-}
-
-.header-logo a{
-  color: white;
-  font-size: 36px;
-  margin: 10px 10px 10px 10px;
-}
-
 /* top ================================ */
 .top-main {
   padding: 100px 0 100px;
