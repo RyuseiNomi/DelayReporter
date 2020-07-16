@@ -1,24 +1,31 @@
-# README
+# DelayReporter
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+### App URL
 
-Things you may want to cover:
+https://train-delay-reporter.herokuapp.com/
 
-* Ruby version
+### Environment
 
-* System dependencies
+* Ruby -> 2.7.1
 
-* Configuration
+* Rails -> 6.0.3
 
-* Database creation
+### Installation
 
-* Database initialization
+When you try to build this app on your local environment, you need to run commands as below.
 
-* How to run the test suite
+```
+$ git clone https://github.com/RyuseiNomi/DelayReporter.git
+```
 
-* Services (job queues, cache servers, search engines, etc.)
+````
+$ rails server
+````
 
-* Deployment instructions
+If you meet some errors, you may need to run ....
 
-* ...
+```
+$ bundle install
+```
+
+If you don't get any errors, you can access to http://localhost:3000/ .
